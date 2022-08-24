@@ -1,0 +1,71 @@
+/* header */
+.header-wrapper {
+    /* min-width: 1441px; */
+    display: flex;
+    flex-direction: row;
+    padding: 40px 150px 150px 150px;
+}
+
+/* logo */
+.header-logo {
+    flex: 0.4;
+}
+
+/* nav */
+.header-nav {
+    flex: 1.5;
+    line-height: 35px;
+    text-align: center;
+}
+
+/* nav > a */
+.header-nav>nav>a {
+    text-decoration: none;
+    margin-right: 30px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+
+    color: #4F5665;
+}
+
+/* buttons */
+.header-btn-signin,
+.header-btn-signup {
+    flex: 0.2;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.link-signin,
+.link-signup {
+    text-decoration: none;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 35px;
+
+    color: #0B132A;
+    border: 1px solid transparent;
+    padding: 13px 45px 13px 45px;
+    border-radius: 45px;
+
+    transition-duration: 0.2s;
+}
+
+.link-signin:hover,
+.link-signup:hover {
+    color: #F53855;
+    border: 1px solid #F53855;
+
+    transition-duration: 0.2s;
+}
+
+.burger-menu {
+    display: none;
+}

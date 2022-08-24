@@ -1,0 +1,42 @@
+/* section FOOTER */
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 150px 280px 50px 280px;
+    margin-top: -70px;
+    background-color: #F6F6F6;
+}
+
+.footer-text {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-text>p {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+
+    color: #AFB5C0;
+}
+
+.footer-bts {
+    flex: 1;
+    text-align: center;
+    padding-top: 10px;
+    transition-duration: 0.2s;
+}
+
+.footer-bts>img:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+    transition-duration: 0.2s;
+}
+
+.footer-logo {
+    flex: 1;
+    text-align: right;
+    padding-top: 10px;
+}
