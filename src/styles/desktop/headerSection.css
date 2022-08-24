@@ -30,6 +30,15 @@
     line-height: 19px;
 
     color: #4F5665;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    transition-duration: 0.2s;
+}
+
+.header-nav>nav>a:hover {
+    border-bottom: 2px solid #F53855;
+    padding-bottom: 10px;
+    transition-duration: 0.1s;
 }
 
 /* buttons */
