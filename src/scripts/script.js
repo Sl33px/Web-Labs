@@ -51,7 +51,7 @@ burgerBtn.addEventListener('click', () => {
         click = false
         console.log('close menu')
 
-        document.body.removeChild(divNav) 
+        document.body.removeChild(divNav)
     } else {
         click = true
         console.log('open menu')
@@ -73,7 +73,8 @@ burgerBtn.addEventListener('click', () => {
         });
 
         function draw(timePassed) {
-            divNav.style.height = timePassed / 1.05 + 'px'
+            divNav.style.height = timePassed / 0.85 + 'px'
+            divNav.style.backgroundColor = 'rgb(209, 209, 209)'
         }
 
         divNav.append(about, features, pricing, testimonials, help, signin, signup)

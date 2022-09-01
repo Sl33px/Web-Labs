@@ -30,9 +30,19 @@
 }
 
 .footer-bts>img:hover {
-    cursor: pointer;
+    /* cursor: pointer;
     transform: scale(1.25);
-    transition-duration: 0.2s;
+    transition-duration: 0.2s; */
+
+    animation: footerIconsHover 0.2s infinite;
+}
+
+@keyframes footerIconsHover {
+    0%,
+    100% {
+        cursor: pointer;
+        transform: scale(1.25);
+    }
 }
 
 .footer-logo {
