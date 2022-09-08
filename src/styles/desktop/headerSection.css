@@ -29,19 +29,40 @@
     font-size: 18px;
     line-height: 19px;
 
+    border-bottom: 0px solid transparent;
     color: #4F5665;
+
+    animation: linksBorderHoverReverse 0.3s linear alternate-reverse forwards;
 }
 
 .header-nav>nav>a:hover {
-    animation: linksBorderHover 0.2s infinite;
+    animation: linksBorderHover 0.3s linear alternate-reverse forwards;
 }
 
 @keyframes linksBorderHover {
 
-    0%,
-    100% {
+    from {
         border-bottom: 2px solid #F53855;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
+    }
+
+    to {
+        border-bottom: 0px solid transparent;
+        padding-bottom: 0px;
+
+    }
+}
+
+@keyframes linksBorderHoverReverse {
+    from {
+        border-bottom: 0px solid transparent;
+        padding-bottom: 5px;
+    }
+
+    to {
+
+        border-bottom: 2px solid #F53855;
+        padding-bottom: 15px;
     }
 }
 

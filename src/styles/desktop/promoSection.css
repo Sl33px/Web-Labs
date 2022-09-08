@@ -50,13 +50,44 @@
     box-shadow: 0px 20px 54px 0px rgba(245, 56, 56, 0.35);
 
 
-    transition-duration: 0.2s;
+    /* transition-duration: 0.2s; */
+    animation: promoBtnAnimReverse 0.2s linear alternate-reverse forwards;
 }
 
-.promo-btn:hover {
+/* .promo-btn:hover {
     cursor: pointer;
     transform: scale(0.8);
     transition-duration: 0.2s;
+} */
+
+.promo-btn:hover {
+    animation: promoBtnAnim 0.2s linear alternate-reverse forwards;
+}
+
+@keyframes promoBtnAnim {
+    from {
+        cursor: pointer;
+        transform: scale(0.8);
+        transition-duration: 0.2s;
+    }
+
+    to {
+        cursor: pointer;
+        transform: scale(1);
+    }
+}
+
+@keyframes promoBtnAnimReverse {
+    from {
+        cursor: pointer;
+        transform: scale(1);
+    }
+
+    to {
+        cursor: pointer;
+        transform: scale(0.8);
+        transition-duration: 0.2s;
+    }
 }
 
 /* img */

@@ -45,16 +45,27 @@
     border-radius: 10px;
     padding: 30px 25px 0px 25px;
 
-    transition-duration: 0.3s;
+    animation: userWrapperHoverReverse 0.3s linear alternate-reverse forwards;
 }
 
 .user-wrapper:hover {
-    cursor: pointer;
-    border: 2px solid #F53838;
-    transform: scale(1.125);
+    animation: userWrapperHover 0.3s linear alternate-reverse forwards;
+}
 
-    transition-duration: 0.3s;
+@keyframes userWrapperHover {
+    from {
+        cursor: pointer;
+        border: 2px solid #F53838;
+        transform: scale(1.125);
+    }
+}
 
+@keyframes userWrapperHoverReverse {
+    to {
+        cursor: pointer;
+        border: 2px solid #F53838;
+        transform: scale(1.125);
+    }
 }
 
 .user-header {
@@ -198,11 +209,23 @@
     box-shadow: 0px 20px 54px 0px rgba(245, 56, 56, 0.35);
 
     color: #FFFFFF;
-    transition-duration: 0.2s;
+    animation: subscriptionBtnHoverReverse 0.2s linear alternate-reverse forwards;
 }
 
 .subscription-btn>button:hover {
-    cursor: pointer;
-    transform: scale(0.9);
-    transition-duration: 0.2s;
+    animation: subscriptionBtnHover 0.2s linear alternate-reverse forwards;
+}
+
+@keyframes subscriptionBtnHover {
+    from {
+        cursor: pointer;
+        transform: scale(0.9);
+    }
+}
+
+@keyframes subscriptionBtnHoverReverse {
+    to {
+        cursor: pointer;
+        transform: scale(0.9);
+    }
 }
