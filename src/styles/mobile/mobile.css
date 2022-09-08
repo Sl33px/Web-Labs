@@ -1,0 +1,10 @@
+@import url(../mobile/headerSection.css);
+@import url(../mobile/promoSection.css);
+@import url(../mobile/descriptionSection.css);
+@import url(../mobile/feedbackSection.css);
+@import url(../mobile/footerSection.css);
+
+body {
+    margin: 0;
+    padding: 0;
+}

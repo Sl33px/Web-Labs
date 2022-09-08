@@ -1,0 +1,165 @@
+.feedback-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+}
+
+.feedback-header {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 40px;
+
+    color: #0B132A;
+}
+
+.feedback-descr {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #4F5665;
+}
+
+.feedback-users {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px 10px 5px;
+}
+
+.user-wrapper {
+    min-height: 200px;
+    margin-top: 20px;
+    padding: 10px 0px 0px 0px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.user-header {
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px 10px;
+}
+
+.user-profile-img {
+    flex: 0;
+    padding-top: 18px;
+}
+
+.user-location {
+    flex: 2.5;
+    text-align: left;
+    padding-left: 12px;
+    line-height: 10px;
+}
+
+.user-fio {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+
+    color: #0B132A;
+}
+
+.user-loc {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+
+    color: #4F5665;
+}
+
+.user-rate {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.user-rate>p {
+    flex: 1;
+    padding-top: 3px;
+    padding-right: 10px;
+    text-align: right;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+
+    color: #0B132A;
+}
+
+.user-rate>img {
+    flex: 0.1;
+    height: 20%;
+    padding-top: 19px;
+}
+
+.user-comment {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 30px;
+
+    color: #0B132A;
+}
+
+.subsciption-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px 20px 35px 20px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.subscription-p1 {
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #0B132A;
+}
+
+.subscription-p2 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #4F5665;
+}
+
+.subscription-btn>button {
+    width: 200px;
+    height: 60px;
+    background: #F53838;
+    border: 1px solid #F53838;
+    box-shadow: 0px 20px 54px 0px rgba(225, 50, 56, 0.35);
+    border-radius: 10px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+
+    color: #FFFFFF;
+}

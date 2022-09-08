@@ -1,0 +1,100 @@
+/* section PROMO */
+.promo-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 150px 140px 150px;
+}
+
+.promo-descr {
+    flex: 1;
+}
+
+/* header */
+.promo-header {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 70px;
+
+    color: #0B132A;
+}
+
+/* description */
+.promo-text {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 35px;
+    padding-bottom: 15px;
+
+    color: #4F5665;
+}
+
+/* button */
+.promo-btn {
+    width: 250px;
+    height: 65px;
+    background: #F53838;
+    border: 1px solid #F53838;
+    border-radius: 10px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+
+    box-shadow: 0px 20px 54px 0px rgba(245, 56, 56, 0.35);
+
+
+    /* transition-duration: 0.2s; */
+    animation: promoBtnAnimReverse 0.2s linear alternate-reverse forwards;
+}
+
+/* .promo-btn:hover {
+    cursor: pointer;
+    transform: scale(0.8);
+    transition-duration: 0.2s;
+} */
+
+.promo-btn:hover {
+    animation: promoBtnAnim 0.2s linear alternate-reverse forwards;
+}
+
+@keyframes promoBtnAnim {
+    from {
+        cursor: pointer;
+        transform: scale(0.8);
+        transition-duration: 0.2s;
+    }
+
+    to {
+        cursor: pointer;
+        transform: scale(1);
+    }
+}
+
+@keyframes promoBtnAnimReverse {
+    from {
+        cursor: pointer;
+        transform: scale(1);
+    }
+
+    to {
+        cursor: pointer;
+        transform: scale(0.8);
+        transition-duration: 0.2s;
+    }
+}
+
+/* img */
+.promo-img {
+    flex: 1;
+}
+
+.promo-img>img {
+    float: right;
+}

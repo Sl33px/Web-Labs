@@ -1,0 +1,19 @@
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 70px 30px 30px 30px;
+    margin-top: -70px;
+    background-color: #F6F5F5;
+}
+
+.footer-text {
+    padding-bottom: 10px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+
+    color: #AFB5C0;
+}
+

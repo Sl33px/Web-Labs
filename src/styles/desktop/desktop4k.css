@@ -1,0 +1,13 @@
+@import url(../desktop/headerSection.css);
+@import url(../desktop/promoSection.css);
+@import url(../desktop/descriptionSection.css);
+@import url(../desktop/feedbackSection.css);
+@import url(../desktop/footerSection.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1441px;
+    width:70%;
+    margin-left: 15%;
+}
