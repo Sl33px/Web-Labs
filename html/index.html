@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>CRUD</title>
+</head>
+
+<body>
+
+    <header class="header-wrapper">
+        <h1>Hotels</h1>
+
+        <form name="findCardForm">
+            <input type="text" id="find_input" placeholder="Find item...">
+            <button type="submit" id="find_button" class="find-btn">Find</button>
+            <button type="reset" id="cancel_find_button" class="cancel-find-btn">Clear</button>
+        </form>
+    </header>
+
+    <main class="content-wrapper">
+        <section class="tools-wrapper">
+
+            <h3 style="color: #fff;">Add hotel</h3>
+            <br>
+            <form name="createHotelForm">
+                <label for="name_input" style="color: #fff;">Name</label><br>
+                <input type="text" id="name_input"><br>
+                <label for="price_per_day_input" style="color: #fff;">Price Per Day</label><br>
+                <input type="number" id="price_per_day_input"><br>
+                <label for="quantity_of_visitors_per_year_input" style="color: #fff;">Quantity Of Visitors Per Year</label><br>
+                <input type="number" id="quantity_of_visitors_per_year_input"><br>
+                <label for="quantity_of_rooms_input" style="color: #fff;">Quantity Of Rooms</label><br>
+                <input type="number" id="quantity_of_rooms_input"><br>
+                <button type="reset" class="add-hotel-clear-btn">Clear</button>
+                <button type="submit" id="submit_button" class="add-hotel-submit-btn">Submit</button>
+            </form>
+
+            <div class="count-price-div" id="count_price_container">
+                <h3>Count price for all hotels</h3>
+                <button id="total_sum_of_hotels_per_day" class="count-btn">Count</button>
+                <div id="count_price_print_div"></div>
+            </div>
+
+            <div class="sort-by-the-most-expensive-hotel-div">
+                <h3>Sort by the most expensive hotel</h3>
+                <label class="switch">
+                    <input type="checkbox" id="sort_by_the_most_expensive_hotel_btn">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+        </section>
+
+        <section class="items-wrapper" id="items_container">
+
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="../scripts/index.js"></script>
+</body>
+
+</html>
