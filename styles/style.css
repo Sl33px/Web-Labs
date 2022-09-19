@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 50px 0 50px;
+  line-height: 90px;
+
+  height: 100px;
+  background-color: #190061;
+}
+
+.header-wrapper>h1 {
+  color: #fff;
+}
+
+#find_input {
+  height: 28px;
+  width: 200px;
+  padding-left: 5px;
+  margin: 0 10px 0 10px;
+  border-radius: 4px;
+}
+
+.find-btn,
+.cancel-find-btn,
+.add-hotel-clear-btn,
+.add-hotel-submit-btn,
+.count-btn {
+  margin: 0 5px 0 10px;
+  height: 28px;
+  width: 70px;
+  border: 1px solid #282828;
+  border-radius: 5px;
+
+  background-color: #282828;
+
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  transition-duration: 0.2s;
+
+
+}
+
+.find-btn:hover,
+.cancel-find-btn:hover,
+.add-hotel-clear-btn:hover,
+.add-hotel-submit-btn:hover,
+.count-btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition-duration: 0.2s;
+}
+
+.find-btn:hover,
+.add-hotel-submit-btn:hover,
+.count-btn:hover {
+  background-color: #5b24ff;
+}
+
+.cancel-find-btn:hover,
+.add-hotel-clear-btn:hover {
+  border-color: #C7372F;
+  background-color: #C7372F;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  /* background-color: #000; */
+}
+
+.tools-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+
+  border-right: 5px solid #282828;
+}
+
+#name_input,
+#price_per_day_input,
+#quantity_of_visitors_per_year_input,
+#quantity_of_rooms_input {
+  border: 1px solid #fff;
+  height: 20px;
+  border-radius: 5px;
+  padding-left: 5px;
+  margin: 5px 0 15px 0;
+}
+
+.count-price-div {
+  padding: 50px 0 20px 0;
+}
+
+.count-price-div>h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.sort-by-the-most-expensive-hotel-div {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0 20px 0;
+}
+
+.sort-by-the-most-expensive-hotel-div>h3 {
+  color: #fff;
+  line-height: 65px;
+}
+
+.switch {
+  margin-top: 20px;
+  margin-left: 30px;
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #C7372F;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #5b24ff;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #5b24ff;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* for items container */
+.items-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 2;
+  /* background-color: orange; */
+}
+
+/* for every card */
+.card-wrapper {
+  margin: 20px 20px 20px 20px;
+  padding: 20px 10px 20px 10px;
+  width: 200px;
+  height: 150px;
+  /* border: 2px solid #000; */
+  border-radius: 5px;
+  background-color: #1d007d;
+}
+
+.card-wrapper>p {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 10px
+}
+
+/* moda window  */
+.modal-container-div {
+  position: absolute;
+  top: 20px;
+  left: 750px;
+  width: 400px;
+  height: 150px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  background-color: grey;
+
+  animation: modalShowAnim 0.3s linear;
+}
+
+@keyframes modalShowAnim {
+  from {
+    top: -200px;
+  }
+
+  to {
+    top: 20px;
+  }
+}
+
+.modal-container-div-reverse-anim {
+  animation: modalCloseAnim 0.3s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes modalCloseAnim {
+  from {
+    top: 20px;
+  }
+
+  to {
+    top: -200px;
+  }
+}
+
+.modal-container-text {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 600;
+  /* line-height: 145px; */
+}
+
+.modal-btn {
+  margin-top: 40px;
+  margin-left: 170px;
+
+  height: 28px;
+  width: 70px;
+  border: 1px solid #282828;
+  border-radius: 5px;
+
+  background-color: #282828;
+
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  transition-duration: 0.2s;
+
+}
+
+.modal-btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition-duration: 0.2s;
+  border-color: #C7372F;
+  background-color: #C7372F;
+}
