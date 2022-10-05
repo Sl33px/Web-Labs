@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "id": "92780990-44f5-11ed-9cd8-bd25efa087df",
+      "name": "Britanney Donaldson",
+      "pricePerDay": "544",
+      "quantityOfVisitorsPerYear": "63",
+      "quantityOfRooms": "167"
+    },
+    {
+      "id": "9502d320-44f5-11ed-a137-29196a94130c",
+      "name": "ALO",
+      "pricePerDay": "247",
+      "quantityOfVisitorsPerYear": "33",
+      "quantityOfRooms": "479"
+    },
+    {
+      "id": "96a97e40-44f5-11ed-8bd4-a1c9017b063d",
+      "name": "O",
+      "pricePerDay": "0",
+      "quantityOfVisitorsPerYear": "0",
+      "quantityOfRooms": "0"
+    }
+  ]
+}
