@@ -1,0 +1,27 @@
+.catalogPage {
+    /*padding: 30px 100px;*/
+}
+
+.catalog-tools-div {
+    border: 1px solid #000;
+    padding: 30px 100px;
+
+
+}
+
+.catalog-tools-div > form > select {
+    margin-right: 40px;
+}
+
+.catalog-tools-div > form > button {
+    float: right;
+    padding: 3px 30px;
+    border-radius: 5px;
+}
+
+.catalog-of-items-container {
+    padding: 120px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
