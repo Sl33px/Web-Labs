@@ -1,0 +1,17 @@
+.catalogPageItem {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+.catalogPageItem > img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.catalogPageItem > button {
+    border: 1px solid #000;
+    border-radius: 5px;
+}

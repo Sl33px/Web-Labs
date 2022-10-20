@@ -1,0 +1,46 @@
+.homePage {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-descr {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 100px;
+}
+
+.home-descr-img {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    /*justify-content: center;*/
+}
+
+.home-descr-img > img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.home-descr-text {
+    flex: 1;
+    font-size: 19px;
+}
+
+.div-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    padding: 50px 100px;
+}
+
+.home-items-btn {
+    text-align: center;
+    padding: 0px 100px 40px 100px;
+}
+
+.home-items-btn > button {
+    padding: 15px 30px;
+    border-radius: 10px;
+}
