@@ -1,0 +1,30 @@
+.cartPage {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.cartPage > h2 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.cartPagePriceSum > h3 {
+    float: right;
+    padding-top: 10px;
+    margin-right: 430px;
+}
+
+.cartPageBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+.cartPageBtns > button {
+    width: 160px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #e5cb49;
+}

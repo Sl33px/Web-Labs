@@ -1,0 +1,48 @@
+.cartPageItem {
+    margin: 20px 280px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFDD0;
+}
+
+.cartPageItem > div > img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.cartPageItemHeader > h1 {
+    line-height: 110px;
+    margin-left: 50px;
+}
+
+.cartPageItemCounter {
+    margin-top: 46px;
+    margin-left: 500px;
+}
+
+.cartPageItemCounter > button {
+    width: 50px;
+    height: 40px;
+    margin: 0 20px;
+    font-size: 40px;
+    padding-bottom: 15px;
+    line-height: 30px;
+    border-radius: 5px;
+    background-color: #e5cb49;
+}
+
+.cartPageItemCounter > span {
+    font-size: 30px;
+}
+
+.cartPageItemPrice > h3 {
+    margin-top: 45px;
+    margin-left: 20px;
+}
+
+.cartPageBtns {
+
+}
