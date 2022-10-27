@@ -1,0 +1,13 @@
+.item {
+    flex: 1 1 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    /*text-align: center;*/
+}
+
+.item > img {
+    width: 300px;
+    margin-left: 130px;
+    border-radius: 10px;
+}
