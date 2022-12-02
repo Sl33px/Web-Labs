@@ -1,0 +1,53 @@
+.catalog-single-page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 150px;
+}
+
+.catalog-single-page-container > div> img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.catalog-single-page-descr {
+    dispaly: flex;
+    flex-direction: column;
+    margin-right: 130px;
+}
+
+.catalog-single-page-descr-btns > button {
+    margin-right: 40px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background-color: #e5cb49;
+}
+
+.catalog-single-page-inputs > form > input {
+    margin-right: 10px;
+    padding-left: 5px;
+}
+
+.catalog-single-page-descr-btns,
+.catalog-single-page-text,
+.catalog-single-page-inputs {
+    margin-top: 15px;
+}
+
+.catalog-single-page-tool {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 150px;
+}
+
+.catalog-single-page-tool-btns > button {
+    margin-right: 40px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-color: #e5cb49;
+}
+
+.catalog-single-page-tool-btns > button > Link {
+    text-decoration: none;
+}
